@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundFloating"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/add_auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_text" />
+
+    <Button
+        android:id="@+id/add_workspace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_workspace_text" />
+
+    <Button
+        android:id="@+id/add_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_article_text" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_background"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="3">
+
+        <!--作者列表-->
+        <ListView
+            android:id="@+id/auth_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent" />
+
+        <!--工作室列表-->
+        <ListView
+            android:id="@+id/workspace_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent" />
+
+        <!--文章列表-->
+        <ListView
+            android:id="@+id/article_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</LinearLayout>

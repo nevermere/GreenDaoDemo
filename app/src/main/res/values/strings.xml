@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GreenDaoDemo</string>
+
+    <string name="add_text">添加作者</string>
+    <string name="add_workspace_text">添加工作室</string>
+    <string name="add_article_text">添加文章</string>
+    <string name="delete_text">删除</string>
+    <string name="modify_text">修改</string>
+    <string name="query_text">查询</string>
+</resources>
